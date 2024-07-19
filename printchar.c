@@ -6,8 +6,7 @@ int main()
     int n = 0;
     while(scanf("%d", &n)!=EOF)
     {
-        int i = 0;
-        for(i=0; i<n; i++)
+       for(int i = 0; i<n; i++)
         {
             printf("*");
         }
