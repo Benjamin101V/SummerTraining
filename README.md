@@ -1,2 +1,2 @@
 # benjamin_c101
-2024_C_summertraining
+2024_C_summer training
