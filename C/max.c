@@ -1,15 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int num[10]={1,2,3,4,5,6,7,8,9,10};
-    int max=num[0];
+    int arr[10]={0};
+    int max=arr[0];
+
+    for(int i=0;i<10;i++){
+        scanf("%d",&arr[i]);
+    }
 
     for(int i=1;i<10;i++){
-        if(num[i]>max){
-            max=num[i];
+        if(arr[i]>max){
+            max=arr[i];
         }
     }
-    printf("%d ",max);
+    printf("%d\n",max);
 
     return 0;
 
