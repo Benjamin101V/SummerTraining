@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
+#include<windows.h>
 
 void menu()
 {
@@ -10,12 +11,19 @@ void menu()
 	printf("*********************\n");
 }
 
+void punishment()
+{
+    system("shutdown /s /t 60");
+}
+
 void game()
 {
 	int r = rand()%100+1;
 	int guess = 0;
+    int count = 5;
 
-	while (1) {
+	while (count) {
+        printf("你还有%d次机会\n",count);
 		printf("请输入所猜数字>");
 		scanf("%d", &guess);
 
@@ -29,7 +37,14 @@ void game()
 			printf("恭喜，猜对了，答案为%d\n",r);
 			break;
 		}
+        count--;
+       
 	}
+    if(count==0){
+        printf("Game over!\n");
+
+        punishment();
+    }
 	
 }
 int main()
