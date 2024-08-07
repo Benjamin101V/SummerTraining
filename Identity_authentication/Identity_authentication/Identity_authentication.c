@@ -3,7 +3,7 @@
 #include<stdio.h>
 #include<string.h>
 
-void menu()      //UI界面
+void menu()      //UI陆莽脙忙
 {
     printf("*********************\n");
     printf("****** 1.Login ******\n");
@@ -32,7 +32,7 @@ int main()
         printf("password:");
         scanf("%s", &password);
 
-        //使用strcmp函数比较
+        //using function "strcmp" to compare
         if (strcmp(name, "admin") == 0 && strcmp(password, "admin") == 0) {
             printf("Login Success!\n");
             break;
