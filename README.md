@@ -1,2 +1,3 @@
-# benjamin_c101
-2024_C_summer training
+# benjamin_c
+2024_summer training
+2024年暑期C语言训练
